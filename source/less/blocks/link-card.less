@@ -1,0 +1,51 @@
+.link-card__link {
+  .font-basic();
+  font-size: 19px;
+  line-height: 24px;
+  color: @color-light;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 31px;
+  text-decoration: none;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.link-card__link--lamp {
+  background-color: #63d1bb;
+}
+
+.link-card__link--cube {
+  background-color: #56c3b2;
+}
+
+.link-card__descr {
+  display: inline-block;
+  width: 130px;
+  margin-left: 30px;
+}
+
+.link-card__link::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 65px;
+  height: 65px;
+}
+
+.link-card__link--lamp::before {
+  background-image: url("../img/lamp.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.link-card__link--cube::before {
+  background-image: url("../img/cube.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}

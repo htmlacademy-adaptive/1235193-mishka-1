@@ -1,0 +1,35 @@
+.main-nav__toggle {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: 32px;
+    height: 2px;
+    background-color: @color-dark;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
