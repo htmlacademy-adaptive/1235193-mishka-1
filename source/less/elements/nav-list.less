@@ -1,0 +1,132 @@
+.nav-list__link {
+  display: block;
+  text-decoration: none;
+  padding: 27px 0 27px 0;
+}
+
+.nav-list__link--search {
+  @media (min-width: @tablet-width) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.nav-list__span {
+  display: inline-block;
+  .font-basic();
+  font-size: 17px;
+  line-height: 24px;
+  color: @color-dark;
+}
+
+.nav-list__span--search {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.nav-list__span--desktop {
+  font-size: 15px;
+}
+
+.nav-list__descr {
+  .font-descr();
+  font-size: 15px;
+  line-height: 24px;
+  color: @color-medium;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+.nav-list {
+  .list-reset();
+  border-top: 1px solid #ececec;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 167px 82px 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 174px 174px 1fr 264px;
+  }
+}
+
+.nav-list__item {
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.nav-list__item--desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    border-top: 1px solid #ececec;
+  }
+}
+
+.nav-list__item--tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-top: 27px;
+    grid-column: -1/-3;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: end;
+  }
+}
+
+.nav-list__item--search {
+  @media (min-width: @tablet-width) {
+    grid-column: 1/4;
+    order: -2;
+    display: flex;
+    justify-content: end;
+    border-right: 1px solid #ececec;
+    position: relative;
+    border-bottom: 1px solid #ececec;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 78px;
+      top: 0;
+      right: 84px;
+      background-color: #ececec;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 0;
+    grid-column: 3/4;
+  }
+}
+
+.nav-list__item--cart {
+  @media (min-width: @tablet-width) {
+    grid-column: -1/-2;
+    order: -1;
+    border-bottom: 1px solid #ececec;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 0;
+  }
+}
+
+.nav-list__icon {
+  margin-right: 26px;
+}
