@@ -1,0 +1,122 @@
+.contacts__wrapper-top {
+  padding-top: 38px;
+  margin: 0 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 46px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 22px;
+    margin: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding-left: 80px;
+  }
+}
+
+.contacts__link {
+  display: block;
+  text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+
+
+.contacts__title {
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1/-1;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  &::before {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 85px;
+      background-image: url("../img/flag.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      top: -35px;
+      right: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: unset;
+      left: -136px;
+      top: -30px;
+    }
+  }
+}
+
+.contacts__span {
+  .font-descr();
+  font-size: 14px;
+  line-height: 30px;
+  color: @color-medium;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.contacts__span--link {
+  text-decoration-color: #62d1ba;
+  text-underline-offset: 10px;
+}
+
+.contacts__email {
+  margin-bottom: 28px;
+  display: flex;
+}
+
+.contacts__address {
+  margin-bottom: 62px;
+  display: flex;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 46px;
+  }
+}
+
+.contacts__span--left {
+  margin-right: 23px;
+}
+
+.contacts__wrapper-bottom {
+  padding: 42px 0 39px 0;
+  margin: 0 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 55px 0 57px 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: start;
+    padding-left: 80px;
+  }
+}
+
+.contacts__container {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 527px;
+    width: 1050px;
+    margin: 0 auto;
+    padding: 71px 0 105px 111px;
+    gap: 0 33px;
+  }
+}
+

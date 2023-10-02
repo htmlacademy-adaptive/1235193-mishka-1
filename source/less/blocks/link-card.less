@@ -15,11 +15,11 @@
   }
 }
 
-.link-card__link--lamp {
+.link-card:nth-child(odd) {
   background-color: #63d1bb;
 }
 
-.link-card__link--cube {
+.link-card:nth-child(even) {
   background-color: #56c3b2;
 }
 
@@ -49,3 +49,17 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+.link-card:hover {
+  padding-top: 5px;
+  margin-top: -5px;
+}
+
+.link-card__link:hover {
+  padding-top: 19px;
+}
+
+.link-card__link:hover::before {
+  top: 15px;
+}
+
