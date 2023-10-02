@@ -22,12 +22,12 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list nav-list">
-          <li class="nav-list__item">
+          <li class="nav-list__item nav-list__item--catalog">
             <a class="nav-list__link" href="catalog.html">
               <span class="nav-list__span">Каталог товаров</span>
             </a>
           </li>
-          <li class="nav-list__item">
+          <li class="nav-list__item nav-list__item--knitting">
             <a class="nav-list__link" href="form.html">
               <span class="nav-list__span">Вязание на заказ</span>
             </a>
@@ -60,12 +60,12 @@
               <span class="nav-list__span nav-list__span--desktop">Распродажа</span>
             </a>
           </li>
-          <li class="nav-list__item nav-list__item--tablet">
+        </ul>
+          <p class="nav-list__line">
             <span class="nav-list__descr">
               Бесплатная доставка по России
             </span>
-          </li>
-        </ul>
+          </p>
       </nav>
     </div>
   </header>
@@ -127,9 +127,149 @@
         </div>
       </div>
     </section>
+    <section class="about-us">
+      <div class="about-us__container">
+        <h2 class="about-us__title second-title">Коротко о нас:</h2>
+        <ul class="about-us__list">
+          <li class="about-us__item about-us__item--flower">
+            <p class="about-us__descr">Экологически<br>чистые материалы</p>
+          </li>
+          <li class="about-us__item about-us__item--money">
+            <p class="about-us__descr">Скандинавский стиль<br>по российской цене</p>
+          </li>
+          <li class="about-us__item about-us__item--heart">
+            <p class="about-us__descr">Увеличивает лайки<br>на фотографиях</p>
+          </li>
+          <li class="about-us__item about-us__item--thread">
+            <p class="about-us__descr">Связано вручную<br>с любовью и умилением</p>
+          </li>
+          <li class="about-us__item about-us__item--rocket">
+            <p class="about-us__descr">Поддержка отечественного<br>производителя</p>
+          </li>
+          <li class="about-us__item about-us__item--gift">
+            <p class="about-us__descr">Поставляется<br>в подарочной упаковке</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews__container">
+        <div class="reviews__wrapper">
+          <h2 class="reviews__title second-title">Отзывы</h2>
+          <div class="reviews__block slider">
+            <ul class="slider__list">
+              <li class="slider__item">
+                <p class="slider__descr">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+                  лайков, как у популярных инстамамочек.
+                  В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а
+                  также набирают больше лайков!</p>
+              </li>
+            </ul>
+          </div>
+          <div class="reviews__contain">
+            <p class="reviews__descr">Анастасия Красильникова</p>
+            <span class="reviews__span">@misssssiskras</span>
+          </div>
+          <div class="reviews__rotator">
+            <button class="reviews__button reviews__button--left" type="button" aria-label="Предыдущий отзыв">
+              <svg class="reviews__icon" width="50" height="26" viewBox="0 0 50 26" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <use href="./img/sprite.svg#arrow-slider.svg"></use>
+              </svg>
+            </button>
+            <button class="reviews__button reviews__button--right" type="button" aria-label="Следующий отзыв">
+              <svg class="reviews__icon reviews__icon--right" width="50" height="26" viewBox="0 0 50 26" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <use href="./img/sprite.svg#arrow-slider.svg"></use>
+              </svg>
+            </button>
+          </div>
+          <a class="reviews__link button" href="#">Написать</a>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__container">
+      <div class="contacts__wrapper-top">
+        <h2 class="contacts__title second-title">Контакты</h2>
+        <div class="contacts__email">
+          <span class="contacts__span contacts__span--left">e-mail:</span>
+          <a class="contacts__span contacts__span--link" href="#">info@mimimishkashop.ru</a>
+        </div>
+        <address class="contacts__address">
+          <span class="contacts__span contacts__span--left">адрес:</span>
+          <span class="contacts__span">г. Санкт-Петербург<br>ул. Большая Конюшенная д. 19/8, офис 101</span>
+        </address>
+      </div>
+      <div class="contacts__map map">
+        <div class="map__google-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728562!2d30.32047247701142!3d59.93871647491518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1695988249866!5m2!1sru!2sru"
+            width="100%" height="454" style="border: 0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="map__image-container">
+          <picture>
+            <source media="(min-width: 1440px)" type="image/webp"
+              srcset="./img/location-desktop.webp 1x, ./img/location-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp"
+              srcset="./img/location-tablet.webp 1x, ./img/location-tablet@2x.webp 2x">
+            <source media="(min-width: 10px)" type="image/webp"
+              srcset="./img/location.webp 1x, ./img/location@2x.webp 2x">
+            <source media="(min-width: 1440px)"
+              srcset="./img/location-desktop.jpg 1x, ./img/location-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/location-tablet.jpg 1x, ./img/location-tablet@2x.jpg 2x">
+            <img class="map__image" src="./img/location.jpg" srcset="./img/location@2x.jpg 2x"
+              alt="ул. Большая Конюшенная, д. 19/8, офис 101, Санкт-Петербург">
+          </picture>
+        </div>
+      </div>
+      <div class="contacts__wrapper-bottom">
+      <a class="contacts__link button" href="#">Напишите нам</a>
+    </div>
+  </div>
+    </section>
   </main>
-  <footer>
-
+  <footer class="main-footer">
+    <div class="main-footer__container">
+      <div class="main-footer__logo">
+     <a class="main-footer__logo-link" href="#">
+      <svg class="main-footer__logo-icon" width="102" height="34" viewBox="0 0 102 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use href="./img/sprite.svg#logo-footer.svg"></use>
+      </svg>
+     </a>
+      </div>
+      <ul class="main-footer__social social">
+       <li class="social__item">
+        <a class="social__link" href="#">
+        <svg class="social__icon" width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use href="./img/sprite.svg#vk.svg"></use>
+          </svg>
+        </a>
+       </li>
+       <li class="social__item">
+        <a class="social__link" href="#">
+        <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use href="./img/sprite.svg#youtube.svg"></use>
+        </svg>
+      </a>
+       </li>
+       <li class="social__item">
+        <a class="social__link" href="#">
+        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use href="./img/sprite.svg#telegram.svg"></use>
+        </svg>
+        </a>
+       </li>
+      </ul>
+     <div class="main-footer__copyright">
+  <a class="main-footer__copyright-link">Разработано
+    <svg class="main-footer__copyright-icon" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <use href="./img/sprite.svg#htmlacademy.svg"></use>
+    </svg>
+  </a>
+    </div>
+    </div>
   </footer>
   <script src="./js/script.js"></script>
 </body>

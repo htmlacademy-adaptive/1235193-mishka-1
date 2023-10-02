@@ -1,0 +1,25 @@
+.slider {
+  overflow: hidden;
+}
+
+.slider__list {
+  .list-reset();
+  display: flex;
+}
+
+.slider__descr {
+  margin: 0;
+  .font-descr();
+  font-size: 15px;
+  line-height: 30px;
+  color: @color-medium;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.slider__item {
+  width: 100%;
+}
+
