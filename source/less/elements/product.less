@@ -1,0 +1,236 @@
+.product {
+  border: 1px solid #ececec;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+}
+
+.product__image {
+  vertical-align: middle;
+}
+
+.product--last {
+  padding-top: 21px;
+  padding-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    padding-top: 0;
+    padding-bottom: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1/4;
+    grid-template-columns: 683px 1fr;
+    gap: 0 79px;
+    padding-bottom: 0;
+  }
+}
+
+.product__link {
+  .font-basic();
+  font-size: 17px;
+  line-height: 24px;
+  color: @color-dark;
+  text-decoration: none;
+  margin-bottom: 6px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.product__link--last {
+  width: 213px;
+  padding-left: 57px;
+  margin-right: 13px;
+  margin-left: auto;
+  margin-bottom: 26px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 25px;
+    padding-left: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 96px;
+    padding-left: 0;
+    width: 49%;
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    top: 5px;
+    left: 0;
+    background-image: url("../img/camera.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media (min-width: @tablet-width) {
+      top: -3px;
+      left: 37px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 41px;
+      left: 0;
+    }
+  }
+}
+
+.product__link--long {
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+    width: 80%;
+  }
+}
+
+.product__descr {
+  .font-descr();
+  font-size: 13px;
+  line-height: 30px;
+  color: @color-medium;
+  margin: 0;
+  margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 15px;
+  }
+}
+
+.product__descr--last {
+  line-height: 24px;
+  padding: 0 34px;
+  margin-bottom: 41px;
+
+  @media (min-width: @tablet-width) {
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.product__cost {
+  .font-basic();
+  font-size: 15px;
+  line-height: 24px;
+  color: @color-dark;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.product__info-block {
+  padding: 28px 28px 27px;
+
+  @media (min-width: @tablet-width) {
+    padding: 27px 33px 25px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    padding: 27px 26px 25px 28px;
+    flex-grow: 1;
+  }
+}
+
+.product__wrapper-top {
+  border-bottom: 1px solid #ececec;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
+.product__wrapper-bottom {
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    border-top: 1px solid #ececec;
+  }
+}
+
+
+.product__icon {
+  fill: @color-dark;
+}
+
+.product__image-container {
+  margin-bottom: 35px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    grid-row: 1/2;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row: 1/4;
+    grid-column: 1/2;
+    margin-bottom: 0;
+  }
+}
+
+.product__icon-link {
+  position: absolute;
+  width: 105px;
+  height: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/play.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
+}
+
+
+.product__button {
+  text-decoration: none;
+  display: block;
+  margin: 0 34px;
+  padding: 18px 11px;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    align-self: start;
+    justify-self: start;
+    padding-right: 31px;
+    padding-left: 29px;
+  }
+}

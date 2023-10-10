@@ -12,6 +12,8 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-top: 26px;
+    padding-bottom: 36px;
   }
 }
 
@@ -27,15 +29,24 @@
   display: inline-block;
   width: 130px;
   margin-left: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 35px;
+  }
 }
 
 .link-card__link::before {
   content: "";
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 23px;
   width: 65px;
   height: 65px;
+
+  @media (min-width: @tablet-width) {
+    top: 28px;
+    right: 27px;
+  }
 }
 
 .link-card__link--lamp::before {
@@ -51,15 +62,25 @@
 }
 
 .link-card:hover {
-  padding-top: 5px;
-  margin-top: -5px;
+  @media (min-width: @tablet-width) {
+    padding-top: 5px;
+    margin-top: -5px;
+  }
 }
 
 .link-card__link:hover {
-  padding-top: 19px;
+  @media (min-width: @tablet-width) {
+    padding-top: 19px;
+  }
 }
 
 .link-card__link:hover::before {
-  top: 15px;
+  @media (min-width: @tablet-width) {
+    top: 15px;
+  }
+}
+
+.link-card__link:active::before {
+  opacity: 0.3;
 }
 
