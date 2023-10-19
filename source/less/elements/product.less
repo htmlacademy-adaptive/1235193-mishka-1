@@ -1,10 +1,10 @@
 .product {
   border: 1px solid #ececec;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
     display: flex;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: @desktop-width) {
@@ -19,13 +19,14 @@
 }
 
 .product--last {
-  padding-top: 21px;
+  padding-top: 11px;
   padding-bottom: 33px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     padding-top: 0;
-    padding-bottom: 46px;
+    padding-bottom: 43px;
+    margin-bottom: 63px;
   }
 
   @media (min-width: @desktop-width) {
@@ -42,7 +43,16 @@
   line-height: 24px;
   color: @color-dark;
   text-decoration: none;
+  display: inline-block;
   margin-bottom: 6px;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -51,7 +61,7 @@
 
 .product__link--last {
   width: 213px;
-  padding-left: 57px;
+  padding-left: 90px;
   margin-right: 13px;
   margin-left: auto;
   margin-bottom: 26px;
@@ -61,7 +71,7 @@
     width: 100%;
     margin: 0;
     margin-bottom: 25px;
-    padding-left: 100px;
+    padding-left: 104px;
   }
 
   @media (min-width: @desktop-width) {
@@ -76,8 +86,8 @@
     position: absolute;
     width: 35px;
     height: 25px;
-    top: 5px;
-    left: 0;
+    top: 11px;
+    left: 32px;
     background-image: url("../img/camera.svg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -88,8 +98,8 @@
     }
 
     @media (min-width: @desktop-width) {
-      top: 41px;
-      left: 0;
+      top: 45px;
+      left: -1px;
     }
   }
 }
@@ -116,8 +126,8 @@
 
 .product__descr--last {
   line-height: 24px;
-  padding: 0 34px;
-  margin-bottom: 41px;
+  padding: 0 38px;
+  margin-bottom: 36px;
 
   @media (min-width: @tablet-width) {
     line-height: 30px;
@@ -126,6 +136,7 @@
   @media (min-width: @desktop-width) {
     padding-left: 0;
     margin-bottom: 0;
+    margin-top: -32px;
   }
 }
 
@@ -145,7 +156,8 @@
 
   @media (min-width: @tablet-width) {
     padding: 27px 33px 25px;
-    width: 50%;
+    min-width: 50%;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -180,10 +192,18 @@
 
 .product__icon {
   fill: @color-dark;
+
+  &:hover {
+    fill: #63d1bb;
+  }
+
+  &:active {
+    fill: fade(#63d1bb, 30%);
+  }
 }
 
 .product__image-container {
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   position: relative;
 
   @media (min-width: @tablet-width) {
@@ -224,14 +244,14 @@
 .product__button {
   text-decoration: none;
   display: block;
-  margin: 0 34px;
-  padding: 18px 11px;
+  margin: 0 40px;
+  padding: 17px 11px;
 
   @media (min-width: @desktop-width) {
     margin: 0;
     align-self: start;
     justify-self: start;
-    padding-right: 31px;
-    padding-left: 29px;
+    padding: 14px 43px 11px;
+    margin-top: -10px;
   }
 }

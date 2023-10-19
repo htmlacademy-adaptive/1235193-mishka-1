@@ -1,21 +1,37 @@
 .social {
   .list-reset();
   display: flex;
-  padding: 26px 59px 28px 59px;
+  padding: 26px 65px 26px 59px;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    margin-left: -5px;
     justify-content: start;
     border-bottom: none;
   }
-}
 
+  @media (min-width: @desktop-width) {
+    margin-left: -8px;
+  }
+}
 
 .social__item:not(:last-child) {
   @media (min-width: @tablet-width) {
     margin-right: 29px;
   }
+}
+
+.social__icon {
+  fill: #231f20;
+}
+
+.social__link:hover .social__icon {
+  fill: #46c1ae;
+}
+
+.social__link:active .social__icon {
+  fill: fade(#46c1ae, 30%);
 }

@@ -1,6 +1,10 @@
 .text-input {
   width: 100%;
   padding-bottom: 4px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .text-input__label {
@@ -20,7 +24,7 @@
   .font-descr();
   font-size: 17px;
   line-height: 18px;
-  padding: 13px 0;
+  padding: 14px 0;
   border: none;
 
   @media (min-width: @tablet-width) {
@@ -37,8 +41,17 @@
 .text-input__icon {
   position: absolute;
   top: 11px;
-  right: 0;
+  right: 8px;
   fill: @color-dark;
+
+  @media (min-width: @tablet-width) {
+    top: 17px;
+    right: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 120px;
+  }
 }
 
 .text-input__input:hover + .text-input__icon {

@@ -1,5 +1,9 @@
 .form {
-  padding-bottom: 55px;
+  padding-bottom: 57px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 50px;
+  }
 }
 
 .form__group {
@@ -14,7 +18,7 @@
 
 .form__block {
   @media (min-width: @desktop-width) {
-    width: 1050px;
+    width: 701px;
     margin: 0 auto;
   }
 }
@@ -34,6 +38,7 @@
     margin: 0;
     width: 700px;
     margin-left: auto;
+    padding-top: 49px;
   }
 }
 
@@ -48,6 +53,8 @@
   @media (min-width: @tablet-width) {
     align-self: center;
     margin-bottom: 0;
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 
@@ -55,6 +62,8 @@
   display: block;
   width: 100%;
   background-color: @color-light;
+  font-size: 17px;
+  line-height: 16px;
 
   @media (min-width: @tablet-width) {
     width: 230px;
