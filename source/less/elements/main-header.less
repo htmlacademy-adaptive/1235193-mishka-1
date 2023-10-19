@@ -2,6 +2,7 @@
   @media (min-width: @tablet-width) {
     background-color: #f9f9f9;
     position: relative;
+    z-index: 5;
 
     &::before {
       content: "";
@@ -16,11 +17,18 @@
   }
 }
 
+.main-header--theme {
+  @media (min-width: @tablet-width) {
+    background-color: #f1f1f1;
+  }
+}
+
 .main-header__container {
   position: relative;
+  border-bottom: 1px solid #ececec;
 
   @media (min-width: @tablet-width) {
-    margin: 0 50px;
+    margin: 0 49px;
     padding-top: 88px;
   }
 

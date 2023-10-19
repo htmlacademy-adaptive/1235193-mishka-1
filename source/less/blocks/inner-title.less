@@ -1,0 +1,36 @@
+.inner-title {
+  text-align: center;
+  padding: 72px 0 73px 0;
+  background-color: #f1f1f1;
+  margin: 0;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 31px;
+    padding-bottom: 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 36px;
+    padding-bottom: 105px;
+  }
+}
+
+.inner-title::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    z-index: 2;
+    background-image: url("../img/zigzag-tablet.svg");
+    background-repeat: repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/zigzag-catalog-desktop.svg");
+    left: 3px;
+  }
+}
