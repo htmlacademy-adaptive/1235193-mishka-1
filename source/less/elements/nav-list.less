@@ -71,17 +71,10 @@
   font-size: 15px;
 }
 
-.nav-list__descr {
-  .font-descr();
-  font-size: 15px;
-  line-height: 24px;
-  color: @color-medium;
-}
-
 .nav-list {
   .list-reset();
   border-top: 1px solid #ececec;
-  
+
   @media (min-width: @tablet-width) {
     border-top: none;
     display: flex;
@@ -111,18 +104,6 @@
   @media (min-width: @desktop-width) {
     display: block;
     margin-right: 62px;
-  }
-}
-
-.nav-list__line {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    margin: 0;
-    position: absolute;
-    top: 109px;
-    right: 0;
   }
 }
 
@@ -173,7 +154,7 @@
 .nav-list__icon {
   display: inline-block;
   margin-right: 38px;
-  fill: @color-dark;
+  fill: rgba(0, 0, 0, 0.2);
 
   @media (min-width: @tablet-width) {
     margin-right: 28px;
