@@ -14,6 +14,14 @@
   }
 }
 
+.product:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.product:active {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
 .product__image {
   vertical-align: middle;
 }
@@ -21,6 +29,14 @@
 .product--last {
   padding-top: 11px;
   padding-bottom: 33px;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -191,7 +207,7 @@
 
 
 .product__icon {
-  fill: @color-dark;
+  fill: rgba(0, 0, 0, 0.2);
 
   &:hover {
     fill: #63d1bb;
