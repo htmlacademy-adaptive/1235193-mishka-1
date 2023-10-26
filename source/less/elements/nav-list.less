@@ -4,7 +4,6 @@
   padding: 27px 0 27px 0;
   margin: 0 30px;
 
-
   @media (min-width: @tablet-width) {
     margin: 0;
     padding: 23px 0;
@@ -23,7 +22,6 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
-
 .nav-list__link--cart {
   @media (min-width: @tablet-width) {
     padding-top: 33px;
@@ -34,12 +32,8 @@
 .nav-list__link--search {
   @media (min-width: @tablet-width) {
     padding-top: 33px;
-  }
-}
-
-.nav-list__link--catalog {
-  @media (min-width: @desktop-width) {
-    padding-top: 34px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -71,6 +65,14 @@
   font-size: 15px;
 }
 
+.nav-list__link--catalog,
+.nav-list__link--knitting {
+  @media (min-width: @desktop-width) {
+    padding-top: 39px;
+    padding-bottom: 28px;
+  }
+}
+
 .nav-list {
   .list-reset();
   border-top: 1px solid #ececec;
@@ -80,10 +82,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 365px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 380px;
   }
 }
 
@@ -96,6 +94,12 @@
     border-bottom: none;
     margin-right: 40px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 186px;
+    justify-content: start;
+    margin-right: 32px;
+  }
 }
 
 .nav-list__item--desktop {
@@ -103,7 +107,6 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-    margin-right: 62px;
   }
 }
 
@@ -112,15 +115,20 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    right: 250px;
+    right: 266px;
     top: 0;
     margin: 0;
 
+    @media (min-width: @desktop-width) {
+      width: auto;
+      justify-content: end;
+      padding-left: 0;
+    }
 
     &::before {
       content: "";
       position: absolute;
-      left: -33px;
+      left: -4px;
       top: 0;
       width: 1px;
       height: 88px;
@@ -149,6 +157,10 @@
       background-color: fade(@color-dark, 10%);
     }
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .nav-list__icon {
@@ -163,33 +175,13 @@
 
 .nav-list__icon--search {
   @media (min-width: @tablet-width) {
-    margin-right: 47px;
+    margin-right: 0;
   }
 }
 
 .nav-list__item--catalog {
   @media (min-width: @desktop-width) {
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 1px;
-      height: 88px;
-      background-color: fade(@color-dark, 10%);
-      top: 0;
-      right: -37px;
-    }
-  }
-}
-
-.nav-list__item--knitting {
-  @media (min-width: @desktop-width) {
-    position: absolute;
-    left: 221px;
-    top: 13px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
 
